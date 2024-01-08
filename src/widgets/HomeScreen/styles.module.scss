@@ -1,0 +1,12 @@
+.heading {
+  width: 80%;
+  text-align: center;
+  font-size: clamp(19px, 8.878319999999999vw, 76px);
+  font-weight: bold;
+  @apply text-custom-black;
+}
+
+.illustration {
+  width: clamp(160px, 74.7648vw, 640px);
+  @apply mt-7;
+}

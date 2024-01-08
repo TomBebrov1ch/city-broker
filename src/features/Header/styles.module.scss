@@ -1,0 +1,12 @@
+.header_mob {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  @apply mt-8;
+
+  .logo {
+    width: 120px;
+  }
+}

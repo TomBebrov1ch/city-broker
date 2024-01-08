@@ -7,6 +7,6 @@
   @apply mt-8;
 
   .logo {
-    width: 120px;
+    width: clamp(60px, 28.0368vw, 240px);
   }
 }

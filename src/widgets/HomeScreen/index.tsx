@@ -23,7 +23,7 @@ export const HomeScreen = () => {
           className={styles.illustration}
           alt="illustration"
         />
-        <Button text="Связаться с нами" marginTop="mt-10" />
+        <Button text="Подробнее" marginTop="mt-10" />
       </main>
     </>
   );

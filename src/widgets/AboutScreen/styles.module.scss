@@ -1,0 +1,9 @@
+.heading {
+  text-align: center;
+  font-family: Raleway;
+  font-size: clamp(12.5px, 5.840999999999999vw, 50px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%;
+  @apply text-custom-black;
+}

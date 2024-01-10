@@ -13,7 +13,7 @@
 
     &__link {
       font-family: Inter;
-      font-size: 22px;
+      font-size: clamp(11px, 5.140079999999999vw, 44px);
       font-style: normal;
       font-weight: 400;
       line-height: normal;

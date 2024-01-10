@@ -14,6 +14,19 @@ const firstCardData = [
   },
 ];
 
+const secondCardData = [
+  { service: "Поиск потенциальных поставщиков ваших товаров" },
+  { service: "Прозрачность процесса закупок и экономия закупочных средств" },
+];
+
+const thirdCardData = [
+  {
+    service:
+      "Своевременное оповещение о публикации интересующих товаров в проводимых, и идущих сделках",
+  },
+  { service: "Честная конкуренция оппонентов" },
+];
+
 export const ServicesScreen = () => {
   return (
     <div className={`${styles.bg_image} w-full  bg-custom-black m-auto mt-16`}>
@@ -30,14 +43,14 @@ export const ServicesScreen = () => {
           services={firstCardData}
         />
         <ServiceCard
-          heading="Для Клиентов"
+          heading="Для заказчиков"
           marginTop="mt-10"
-          services={firstCardData}
+          services={secondCardData}
         />
         <ServiceCard
           heading="Для Клиентов"
-          marginTop="mt-10"
-          services={firstCardData}
+          marginTop="mt-10 mb-16"
+          services={thirdCardData}
         />
       </section>
     </div>

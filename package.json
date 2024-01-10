@@ -16,12 +16,14 @@
     "react-awesome-reveal": "^4.2.7",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
+    "react-scroll": "^1.9.0",
     "redux-toolkit": "^1.1.2"
   },
   "devDependencies": {
     "@types/node": "^20.10.7",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
+    "@types/react-scroll": "^1.8.10",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
     "@typescript-eslint/parser": "^6.14.0",
     "@vitejs/plugin-react": "^4.2.1",

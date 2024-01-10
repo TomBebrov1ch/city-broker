@@ -1,0 +1,14 @@
+.heading {
+  color: #fff;
+  text-align: center;
+  font-family: Raleway;
+  font-size: clamp(15px, 7.0092vw, 60px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%;
+  @apply mt-4;
+}
+
+.bg_image {
+  background-image: url("../../assets/logo_bg.png");
+}

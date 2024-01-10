@@ -1,0 +1,55 @@
+.service_card {
+  width: clamp(170px, 79.43759999999999vw, 680px);
+  height: clamp(225px, 105.13799999999999vw, 900px);
+  display: flex;
+  flex-direction: column;
+  @apply bg-custom-white;
+
+  &__upper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: Raleway;
+    font-size: clamp(10px, 4.6728vw, 40px);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 153%;
+    @apply bg-custom-red;
+    @apply pt-3;
+    @apply pb-3;
+  }
+
+  &__services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &__list {
+      list-style: none;
+      @apply mt-8;
+      &__circle {
+        width: clamp(5px, 2.3364vw, 20px);
+        height: clamp(5px, 2.3364vw, 20px);
+        border-radius: clamp(5px, 2.3364vw, 20px);
+        @apply bg-custom-red;
+        @apply ml-4;
+        @apply mr-3;
+      }
+
+      &__element {
+        width: 82%;
+        font-family: Inter;
+        font-size: clamp(8px, 3.73824vw, 32px);
+        font-style: normal;
+        font-weight: 400;
+        list-style: none;
+        line-height: 153%;
+        @apply text-custom-black;
+        @apply mt-2;
+      }
+    }
+  }
+}

@@ -1,4 +1,3 @@
-import React from "react";
 import Hamburger from "hamburger-react";
 
 import logo from "@assets/logo.svg";

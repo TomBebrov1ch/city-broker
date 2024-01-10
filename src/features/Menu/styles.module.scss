@@ -3,20 +3,21 @@
   height: 100vh;
   position: absolute;
   display: flex;
-  align-items: center;
   justify-content: center;
   z-index: 1000;
   @apply bg-custom-white;
   &__nav {
+    height: 60%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 
     &__link {
       font-family: Inter;
-      font-size: clamp(11px, 5.140079999999999vw, 44px);
+      font-size: clamp(16px, 7.47648vw, 64px);
       font-style: normal;
-      font-weight: 400;
+      font-weight: 600;
       line-height: normal;
       @apply text-custom-black;
     }

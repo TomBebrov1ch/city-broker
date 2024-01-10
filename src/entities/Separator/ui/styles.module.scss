@@ -15,5 +15,6 @@
     width: clamp(60px, 28.0368vw, 240px);
     height: 2px;
     @apply bg-custom-red;
+    @apply mt-1;
   }
 }

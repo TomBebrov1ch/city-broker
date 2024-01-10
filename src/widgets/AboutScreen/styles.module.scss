@@ -6,4 +6,16 @@
   font-weight: 700;
   line-height: 135%;
   @apply text-custom-black;
+  @apply mt-4;
+}
+
+.sub_heading {
+  text-align: center;
+  font-family: Raleway;
+  font-size: clamp(11px, 5.140079999999999vw, 44px);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135%;
+  @apply text-custom-black;
+  @apply mt-4;
 }

@@ -1,0 +1,56 @@
+.step_card {
+  width: clamp(185px, 86.4468vw, 740px);
+  height: clamp(185px, 86.4468vw, 740px);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(21, 40, 46, 0.05);
+
+  &__number {
+    position: absolute;
+    top: clamp(-32px, -14.95296vw, -128px);
+    width: clamp(32px, 14.95296vw, 128px);
+    height: clamp(32px, 14.95296vw, 128px);
+    border-radius: clamp(30px, 14.0184vw, 120px);
+    color: #fff;
+    text-align: center;
+    font-family: Raleway;
+    font-size: clamp(15px, 7.0092vw, 60px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%;
+    @apply bg-custom-red;
+    @apply p-3;
+  }
+
+  &__heading {
+    text-align: center;
+    font-family: Raleway;
+    font-size: clamp(14px, 6.541919999999999vw, 56px);
+    font-style: normal;
+    font-weight: 600;
+    line-height: 135%;
+    @apply text-custom-black;
+  }
+
+  &__separator {
+    width: 70%;
+    height: 2px;
+    @apply mt-2;
+    @apply bg-custom-red;
+  }
+
+  &__paragraph {
+    width: 85%;
+    text-align: center;
+    font-family: Inter;
+    font-size: clamp(8.5px, 3.9718799999999996vw, 34px);
+    font-style: normal;
+    font-weight: 300;
+    line-height: 153%;
+    @apply text-custom-black;
+    @apply mt-4;
+  }
+}

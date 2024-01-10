@@ -1,15 +1,23 @@
 import Hamburger from "hamburger-react";
+import { useDispatch } from "react-redux";
+import { toggleMenu } from "@redux/menuSlice";
 
 import logo from "@assets/logo.svg";
 
 import styles from "./styles.module.scss";
 
 export const Header = () => {
+  const dispatch = useDispatch();
+
+  function openMenu() {
+    dispatch(toggleMenu());
+  }
+
   return (
     <>
       <header className={styles.header_mob}>
         <img className={styles.logo} src={logo} alt="logo" />
-        <Hamburger color="#DA1D2D" />
+        <Hamburger color="#DA1D2D" onToggle={() => openMenu()} />
       </header>
       <header className="header-pc"></header>
     </>

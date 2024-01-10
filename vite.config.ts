@@ -13,6 +13,7 @@ export default defineConfig({
       "@features": path.resolve(__dirname, "src/features"),
       "@pages": path.resolve(__dirname, "src/pages"),
       "@assets": path.resolve(__dirname, "src/assets"),
+      "@redux": path.resolve(__dirname, "src/redux"),
     },
   },
 });

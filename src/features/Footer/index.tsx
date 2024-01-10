@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import { Button, ModalButton } from "@shared/ui/Button";
+import { ModalButton } from "@shared/ui/Button";
 
 import logo from "@assets/logo.svg";
 

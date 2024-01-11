@@ -19,4 +19,10 @@
   .heading {
     font-size: clamp(19px, 1.9790400000000001vw, 76px);
   }
+
+  .bg_image {
+    background-image: url("../../assets/logo_bg.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+  }
 }

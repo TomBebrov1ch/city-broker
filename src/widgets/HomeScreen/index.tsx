@@ -22,7 +22,7 @@ export const HomeScreen = () => {
           className={styles.illustration}
           alt="illustration"
         />
-        <Button text="Подробнее" marginTop="mt-10" />
+        <Button text="Подробнее" to="about" marginTop="mt-10" />
       </main>
       <main className="container-pc pt-20" id="main-pc">
         <div className="flex flex-col">

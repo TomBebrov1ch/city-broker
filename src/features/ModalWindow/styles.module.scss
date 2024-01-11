@@ -1,0 +1,115 @@
+.modal_container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.233);
+}
+
+.modal_window {
+  width: 90%;
+  height: clamp(185px, 86.4468vw, 740px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  @apply bg-custom-white;
+  @apply border-2;
+  @apply border-custom-red;
+  @apply rounded-md;
+  @apply shadow-xl;
+  @apply p-2;
+
+  &__heading {
+    @apply text-3xl;
+    @apply font-bold;
+    @apply text-custom-red;
+  }
+
+  &__paragraph {
+    width: 100%;
+    @apply text-center;
+    @apply text-xl;
+    @apply text-custom-black;
+    @apply mt-6;
+  }
+
+  &__input {
+    width: 90%;
+    height: clamp(27.5px, 12.8502vw, 110px);
+    text-align: center;
+    outline: none;
+    transition: 0.3s all;
+    @apply border-2;
+    @apply mt-6;
+    @apply border-gray-200;
+    &:hover {
+      @apply border-custom-red;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal_container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    z-index: 0;
+    background-color: rgba(0, 0, 0, 0.233);
+  }
+
+  .modal_window {
+    width: 40%;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    @apply bg-custom-white;
+    @apply border-2;
+    @apply border-custom-red;
+    @apply rounded-md;
+    @apply shadow-xl;
+    @apply p-2;
+
+    &__heading {
+      @apply text-3xl;
+      @apply font-bold;
+      @apply text-custom-red;
+    }
+
+    &__paragraph {
+      width: 50%;
+      @apply text-center;
+      @apply text-xl;
+      @apply text-custom-black;
+      @apply mt-4;
+    }
+
+    &__input {
+      width: 90%;
+      height: clamp(27.5px, 2.8644000000000003vw, 110px);
+      text-align: center;
+      outline: none;
+      transition: 0.3s all;
+      @apply border-2;
+      @apply mt-6;
+      @apply border-gray-200;
+      &:hover {
+        @apply border-custom-red;
+      }
+    }
+  }
+}

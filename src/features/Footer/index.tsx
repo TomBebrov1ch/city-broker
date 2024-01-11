@@ -1,5 +1,7 @@
 import { Link } from "react-scroll";
 import { ModalButton } from "@shared/ui/Button";
+import { useDispatch } from "react-redux";
+import { openModal } from "@redux/modalSlice";
 
 import logo from "@assets/logo.svg";
 import spark_logo from "@assets/spark_logo.svg";
@@ -7,30 +9,36 @@ import spark_logo from "@assets/spark_logo.svg";
 import styles from "./styles.module.scss";
 
 export const Footer = () => {
+  const dispatch = useDispatch();
+
+  function openModalWindow() {
+    dispatch(openModal());
+  }
+
   return (
     <>
       <footer className={styles.footer} id="contacts">
         <img src={logo} className={styles.footer__logo} alt="logo" />
         <nav className={styles.footer__nav}>
-          <Link to="main" className={styles.footer__nav__link}>
+          <Link to="main" smooth className={styles.footer__nav__link}>
             Главная
           </Link>
-          <Link to="about" className={styles.footer__nav__link}>
+          <Link to="about" smooth className={styles.footer__nav__link}>
             О Компании
           </Link>
-          <Link to="services" className={styles.footer__nav__link}>
+          <Link to="services" smooth className={styles.footer__nav__link}>
             Услуги
           </Link>
-          <Link to="markets" className={styles.footer__nav__link}>
+          <Link to="markets" smooth className={styles.footer__nav__link}>
             Площадки
           </Link>
-          <Link to="contacts" className={styles.footer__nav__link}>
+          <Link to="contacts" smooth className={styles.footer__nav__link}>
             Контакты
           </Link>
         </nav>
         <ModalButton
           text="Связаться с нами"
-          onClick={() => console.log("aaa")}
+          onClick={() => openModalWindow()}
           marginTop="mt-8"
         />
         <hr className={styles.footer__separator} />

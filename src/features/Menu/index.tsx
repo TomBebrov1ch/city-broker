@@ -3,14 +3,18 @@ import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-scroll";
 import { ModalButton } from "@shared/ui/Button";
 import { toggleMenu } from "@redux/menuSlice";
-
-import logo from "@assets/logo.svg";
+import { openModal } from "@redux/modalSlice";
 
 import styles from "./styles.module.scss";
 
 export const Menu = () => {
   const dispatch = useDispatch();
   const isMenuOpen = useSelector((state: any) => state.menu.isOpen);
+
+  function closeMenuOpenModal() {
+    dispatch(toggleMenu());
+    dispatch(openModal());
+  }
 
   function closeMenu() {
     dispatch(toggleMenu());
@@ -30,6 +34,7 @@ export const Menu = () => {
       <nav className={styles.menu__nav}>
         <Link
           to="main"
+          smooth
           onClick={() => closeMenu()}
           className={`${styles.menu__nav__link}`}
         >
@@ -37,6 +42,7 @@ export const Menu = () => {
         </Link>
         <Link
           to="about"
+          smooth
           onClick={() => closeMenu()}
           className={`${styles.menu__nav__link} mt-7`}
         >
@@ -44,6 +50,7 @@ export const Menu = () => {
         </Link>
         <Link
           to="services"
+          smooth
           onClick={() => closeMenu()}
           className={`${styles.menu__nav__link} mt-7`}
         >
@@ -51,6 +58,7 @@ export const Menu = () => {
         </Link>
         <Link
           to="markets"
+          smooth
           onClick={() => closeMenu()}
           className={`${styles.menu__nav__link} mt-7`}
         >
@@ -58,6 +66,7 @@ export const Menu = () => {
         </Link>
         <Link
           to="contacts"
+          smooth
           onClick={() => closeMenu()}
           className={`${styles.menu__nav__link} mt-7`}
         >
@@ -65,7 +74,7 @@ export const Menu = () => {
         </Link>
         <ModalButton
           text="Связаться с нами"
-          onClick={() => closeMenu()}
+          onClick={() => closeMenuOpenModal()}
           marginTop="mt-7"
         />
       </nav>

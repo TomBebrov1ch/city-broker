@@ -1,8 +1,9 @@
 import Hamburger from "hamburger-react";
 import { Link } from "react-scroll";
+import { ModalButton } from "@shared/ui/Button";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleMenu } from "@redux/menuSlice";
-import { ModalButton } from "@shared/ui/Button";
+import { openModal } from "@redux/modalSlice";
 
 import logo from "@assets/logo.svg";
 
@@ -14,6 +15,10 @@ export const Header = () => {
 
   function openMenu() {
     dispatch(toggleMenu());
+  }
+
+  function openModalWindow() {
+    dispatch(openModal());
   }
 
   return (
@@ -67,7 +72,7 @@ export const Header = () => {
         </nav>
         <ModalButton
           text="Связаться с нами"
-          onClick={() => console.log("modal")}
+          onClick={() => openModalWindow()}
         />
       </header>
     </>

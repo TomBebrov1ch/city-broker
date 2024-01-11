@@ -101,7 +101,7 @@ export const Footer = () => {
           </nav>
           <ModalButton
             text="Связаться с нами"
-            onClick={() => console.log("aaa")}
+            onClick={() => openModalWindow()}
           />
         </div>
         <hr className={styles.footer_pc__separator} />

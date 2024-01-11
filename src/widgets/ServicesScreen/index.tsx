@@ -1,4 +1,5 @@
 import { Separator } from "@entities/Separator/ui";
+import { Slide } from "react-awesome-reveal";
 import { ServiceCard } from "@entities/ServiceCard/ui";
 
 import styles from "./styles.module.scss";
@@ -35,54 +36,88 @@ export const ServicesScreen = () => {
         id="services"
       >
         <section className="container m-auto pt-10" id="services">
-          <Separator text="Услуги" />
-          <h3 className={styles.heading}>Наши Услуги</h3>
-          <p className="paragraph white w-[80%] mt-4">
-            Компания «CITY BROKER», предоставляет широкий спектр услуг в
-            брокерской деятельности.
-          </p>
-          <ServiceCard
-            heading="Для Клиентов"
-            marginTop="mt-10"
-            services={firstCardData}
-          />
-          <ServiceCard
-            heading="Для заказчиков"
-            marginTop="mt-10"
-            services={secondCardData}
-          />
-          <ServiceCard
-            heading="Для Клиентов"
-            marginTop="mt-10 mb-16"
-            services={thirdCardData}
-          />
+          <Slide direction="left" delay={100} triggerOnce>
+            <Separator text="Услуги" />
+          </Slide>
+          <Slide direction="right" delay={150} triggerOnce>
+            <h3 className={styles.heading}>Наши Услуги</h3>
+          </Slide>
+          <Slide
+            direction="left"
+            delay={200}
+            triggerOnce
+            className="w-full flex items-center justify-center"
+          >
+            <p className="paragraph white w-[80%] mt-4">
+              Компания «CITY BROKER», предоставляет широкий спектр услуг в
+              брокерской деятельности.
+            </p>
+          </Slide>
+          <Slide direction="right" delay={250} triggerOnce>
+            <ServiceCard
+              heading="Для Клиентов"
+              marginTop="mt-10"
+              services={firstCardData}
+            />
+          </Slide>
+          <Slide direction="left" delay={300} triggerOnce>
+            <ServiceCard
+              heading="Для заказчиков"
+              marginTop="mt-10"
+              services={secondCardData}
+            />
+          </Slide>
+          <Slide direction="right" delay={350} triggerOnce>
+            <ServiceCard
+              heading="Для Клиентов"
+              marginTop="mt-10 mb-16"
+              services={thirdCardData}
+            />
+          </Slide>
         </section>
         <section
           className="container-pc flex-col items-center m-auto pt-10"
           id="services-pc"
         >
-          <Separator text="Услуги" />
-          <h3 className={styles.heading}>Наши Услуги</h3>
-          <p className="paragraph white w-[30%] text-center mt-5">
-            Компания «CITY BROKER», предоставляет широкий спектр услуг в
-            брокерской деятельности.
-          </p>
+          <Slide direction="left" delay={100} triggerOnce>
+            <Separator text="Услуги" />
+          </Slide>
+          <Slide direction="right" delay={150} triggerOnce>
+            <h3 className={styles.heading}>Наши Услуги</h3>
+          </Slide>
+          <Slide
+            direction="left"
+            delay={200}
+            triggerOnce
+            className="flex w-full justify-center"
+          >
+            <p className="paragraph white w-[30%] text-center mt-5">
+              Компания «CITY BROKER», предоставляет широкий спектр услуг в
+              брокерской деятельности.
+            </p>
+          </Slide>
           <div className="flex items-center justify-between w-full mt-8 mb-16">
-            <ServiceCard
-              heading="Для Клиентов"
-              marginTop="mt-0"
-              services={firstCardData}
-            />
-            <ServiceCard
-              heading="Для заказчиков"
-              marginTop="mt-0"
-              services={secondCardData}
-            />
-            <ServiceCard
-              heading="Для Клиентов"
-              marginTop="mt-0"
-              services={thirdCardData}
-            />
+            <Slide direction="left" delay={250} triggerOnce>
+              <ServiceCard
+                heading="Для Клиентов"
+                marginTop="mt-0"
+                services={firstCardData}
+              />
+            </Slide>
+            <Slide direction="up" delay={300} triggerOnce>
+              <ServiceCard
+                heading="Для заказчиков"
+                marginTop="mt-0"
+                services={secondCardData}
+              />
+            </Slide>
+            <Slide direction="right" delay={350} triggerOnce>
+              <ServiceCard
+                heading="Для Клиентов"
+                marginTop="mt-0"
+                services={thirdCardData}
+              />
+            </Slide>
           </div>
         </section>
       </div>

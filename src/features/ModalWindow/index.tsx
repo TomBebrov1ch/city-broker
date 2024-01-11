@@ -1,4 +1,3 @@
-import { Slide } from "react-awesome-reveal";
 import { ModalButton } from "@shared/ui/Button";
 import { useDispatch } from "react-redux";
 import { openModal } from "@redux/modalSlice";

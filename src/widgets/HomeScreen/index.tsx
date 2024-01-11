@@ -25,6 +25,26 @@ export const HomeScreen = () => {
         />
         <Button text="Подробнее" marginTop="mt-10" />
       </main>
+      <main className="container-pc pt-20">
+        <div className="flex flex-col">
+          <h1 className={styles.heading}>
+            Открой мир новых{""}
+            <span className="text-custom-red"> инвестиционных </span>
+            возможностей
+          </h1>
+          <p className="paragraph mt-4">
+            Мы представляем биржевые интересы сотен уважаемых бизнесменов из
+            Казахстана и соседних стран. Наши брокеры всегда в курсе изменений
+            биржевых правил и создают выгодные условия для клиентов.
+          </p>
+          <Button text="Подробнее" marginTop="mt-10" />
+        </div>
+        <img
+          src={illustration}
+          className={styles.illustration}
+          alt="illustration"
+        />
+      </main>
     </>
   );
 };

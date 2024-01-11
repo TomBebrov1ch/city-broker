@@ -10,7 +10,7 @@
   }
 
   &__spark_logo {
-    width: 150px;
+    width: clamp(75px, 35.046vw, 300px);
     @apply mt-10;
     @apply mb-5;
   }
@@ -63,5 +63,65 @@
     line-height: 150%;
     @apply text-custom-black;
     @apply mt-6;
+  }
+}
+
+.footer_pc {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: none;
+  }
+
+  .footer_pc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &__nav {
+      width: 60%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      &__link {
+        font-family: Inter;
+        font-size: clamp(10px, 1.0416vw, 40px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        transition: 0.3s all;
+        @apply text-custom-black;
+        &:hover {
+          @apply text-custom-red;
+        }
+      }
+    }
+
+    &__separator {
+      width: 86.6%;
+      height: 2px;
+      margin: auto;
+      @apply bg-custom-red;
+      @apply mt-5;
+      @apply mb-5;
+    }
+
+    &__contact_link {
+      font-family: Inter;
+      font-size: clamp(10px, 1.0416vw, 40px);
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      cursor: pointer;
+      transition: 0.3s all;
+      @apply text-custom-black;
+      &:hover {
+        @apply text-custom-red;
+      }
+    }
   }
 }

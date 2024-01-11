@@ -6,13 +6,13 @@ import styles from "./styles.module.scss";
 interface ButtonProps {
   text: string;
   to?: string | any;
-  marginTop: string;
-  onClick: () => void;
+  marginTop?: string;
+  onClick?: () => void;
 }
 
 export const Button: React.FC<ButtonProps> = ({ text, marginTop, to }) => {
   return (
-    <Link to={to} className={`${styles.button} ${marginTop}`}>
+    <Link to={to} className={`${styles.button} ${marginTop} cursor-pointer`}>
       {text}
     </Link>
   );

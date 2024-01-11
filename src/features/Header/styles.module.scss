@@ -10,3 +10,47 @@
     width: clamp(60px, 28.0368vw, 240px);
   }
 }
+
+.header_pc {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .header_mob {
+    display: none;
+  }
+
+  .header_pc {
+    width: 86.6%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @apply mt-4;
+
+    .logo {
+      width: clamp(85px, 8.8536vw, 340px);
+    }
+
+    &__nav {
+      width: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      &__link {
+        font-family: Inter;
+        font-size: clamp(10px, 1.0416vw, 40px);
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        transition: 0.3s all;
+        @apply text-custom-black;
+        &:hover {
+          @apply text-custom-red;
+        }
+      }
+    }
+  }
+}

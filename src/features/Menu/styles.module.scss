@@ -23,3 +23,9 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .menu {
+    display: none !important;
+  }
+}

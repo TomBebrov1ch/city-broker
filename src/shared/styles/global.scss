@@ -37,6 +37,28 @@ h6 {
   @apply text-custom-black;
 }
 
+.container-pc {
+  display: none;
+}
+
 .white {
   color: white !important;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    display: none;
+  }
+
+  .container-pc {
+    width: 86.6%;
+    display: flex;
+    margin: auto;
+  }
+
+  .paragraph {
+    width: 60%;
+    text-align: left;
+    font-size: 19px;
+  }
 }

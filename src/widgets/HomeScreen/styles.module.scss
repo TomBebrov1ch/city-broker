@@ -10,3 +10,14 @@
   width: clamp(160px, 74.7648vw, 640px);
   @apply mt-7;
 }
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-family: Raleway;
+    font-size: clamp(25px, 2.604vw, 100px);
+    text-align: left;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%;
+  }
+}

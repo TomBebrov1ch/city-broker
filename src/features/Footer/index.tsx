@@ -2,6 +2,7 @@ import { Link } from "react-scroll";
 import { ModalButton } from "@shared/ui/Button";
 
 import logo from "@assets/logo.svg";
+import spark_logo from "@assets/spark_logo.svg";
 
 import styles from "./styles.module.scss";
 
@@ -50,6 +51,12 @@ export const Footer = () => {
       <span className={`${styles.footer__contact_link} w-[70%] mb-15`}>
         Республика Казахстан,050064, г. Алматы,мкр. Думан-2, д. 18, кв. 55
       </span>
+      <img
+        src={spark_logo}
+        className={`${styles.footer__spark_logo}`}
+        alt="spark"
+        onClick={() => (location.href = "https://sparkstudio.kz/")}
+      />
     </footer>
   );
 };

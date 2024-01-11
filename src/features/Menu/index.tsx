@@ -4,6 +4,8 @@ import { Link } from "react-scroll";
 import { ModalButton } from "@shared/ui/Button";
 import { toggleMenu } from "@redux/menuSlice";
 
+import logo from "@assets/logo.svg";
+
 import styles from "./styles.module.scss";
 
 export const Menu = () => {
@@ -18,6 +20,9 @@ export const Menu = () => {
     if (isMenuOpen) {
       document.body.style.overflow = "hidden";
     }
+    return () => {
+      document.body.style.overflow = "auto";
+    };
   });
 
   return (

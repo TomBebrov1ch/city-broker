@@ -9,6 +9,12 @@
     @apply mt-8;
   }
 
+  &__spark_logo {
+    width: 150px;
+    @apply mt-10;
+    @apply mb-5;
+  }
+
   &__nav {
     display: flex;
     flex-direction: column;

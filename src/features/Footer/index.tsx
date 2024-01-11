@@ -60,22 +60,34 @@ export const Footer = () => {
         />
       </footer>
       <footer className={styles.footer_pc} id="contacts-pc">
-        <div className="flex items-center justify-between w-[86.6%]  m-auto">
+        <div className="flex items-center justify-between w-[86.6%] m-auto mt-6">
           <img src={logo} className={styles.footer_pc__logo} alt="logo" />
           <nav className={styles.footer_pc__nav}>
-            <Link to="main" className={styles.footer_pc__nav__link}>
+            <Link smooth to="main-pc" className={styles.footer_pc__nav__link}>
               Главная
             </Link>
-            <Link to="about" className={styles.footer_pc__nav__link}>
+            <Link smooth to="about-pc" className={styles.footer_pc__nav__link}>
               О Компании
             </Link>
-            <Link to="services" className={styles.footer_pc__nav__link}>
+            <Link
+              smooth
+              to="services-pc"
+              className={styles.footer_pc__nav__link}
+            >
               Услуги
             </Link>
-            <Link to="markets" className={styles.footer_pc__nav__link}>
+            <Link
+              smooth
+              to="markets-pc"
+              className={styles.footer_pc__nav__link}
+            >
               Площадки
             </Link>
-            <Link to="contacts" className={styles.footer_pc__nav__link}>
+            <Link
+              smooth
+              to="contacts-pc"
+              className={styles.footer_pc__nav__link}
+            >
               Контакты
             </Link>
           </nav>
@@ -112,7 +124,7 @@ export const Footer = () => {
         </div>
         <img
           src={spark_logo}
-          className={`${styles.footer_pc__spark_logo} mb-5`}
+          className={`${styles.footer_pc__spark_logo} mb-5 cursor-pointer`}
           alt="spark"
           onClick={() => (location.href = "https://sparkstudio.kz/")}
         />

@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 export const HomeScreen = () => {
   return (
     <>
-      <main className="container m-auto mt-10">
+      <main className="container m-auto mt-10" id="main">
         <h1 className={styles.heading}>
           Открой мир новых{""}
           <span className="text-custom-red"> инвестиционных </span>
@@ -24,7 +24,7 @@ export const HomeScreen = () => {
         />
         <Button text="Подробнее" marginTop="mt-10" />
       </main>
-      <main className="container-pc pt-20">
+      <main className="container-pc pt-20" id="main-pc">
         <div className="flex flex-col">
           <h1 className={styles.heading}>
             Открой мир новых{""}

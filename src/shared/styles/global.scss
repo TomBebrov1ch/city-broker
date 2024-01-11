@@ -57,8 +57,11 @@ h6 {
   }
 
   .paragraph {
-    width: 60%;
     text-align: left;
-    font-size: 19px;
+    font-size: clamp(9.5px, 0.9895200000000001vw, 38px);
+  }
+
+  .text-center {
+    text-align: center !important;
   }
 }

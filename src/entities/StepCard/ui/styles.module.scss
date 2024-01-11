@@ -54,3 +54,45 @@
     @apply mt-4;
   }
 }
+
+@media screen and (min-width: 1024px) {
+  .step_card {
+    width: clamp(187.5px, 19.53vw, 750px);
+    height: clamp(165px, 17.1864vw, 660px);
+
+    &__number {
+      position: absolute;
+      top: clamp(-32px, -14.95296vw, -128px);
+      width: clamp(39px, 4.06224vw, 156px);
+      height: clamp(39px, 4.06224vw, 156px);
+      border-radius: clamp(30px, 14.0184vw, 120px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+      font-family: Raleway;
+      font-size: clamp(22.5px, 2.3436vw, 90px);
+      font-style: normal;
+      font-weight: 600;
+      line-height: 135%;
+      @apply bg-custom-red;
+      @apply p-2;
+    }
+
+    &__heading {
+      font-size: clamp(14px, 1.45824vw, 56px);
+    }
+
+    &__separator {
+      width: 70%;
+      height: 2px;
+      @apply mt-2;
+      @apply bg-custom-red;
+    }
+
+    &__paragraph {
+      font-size: clamp(8px, 0.83328vw, 32px);
+    }
+  }
+}

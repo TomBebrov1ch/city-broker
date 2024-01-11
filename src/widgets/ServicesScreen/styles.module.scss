@@ -14,3 +14,9 @@
   background-repeat: no-repeat;
   background-position: bottom;
 }
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-size: clamp(19px, 1.9790400000000001vw, 76px);
+  }
+}

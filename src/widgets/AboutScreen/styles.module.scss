@@ -19,3 +19,14 @@
   @apply text-custom-black;
   @apply mt-4;
 }
+
+@media screen and (min-width: 1024px) {
+  .heading {
+    font-size: clamp(20px, 2.0832vw, 80px);
+  }
+
+  .sub_heading {
+    font-size: clamp(15px, 1.5624vw, 60px);
+    @apply mt-5;
+  }
+}

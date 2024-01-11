@@ -26,7 +26,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    @apply mt-4;
+    @apply mt-8;
 
     .logo {
       width: clamp(85px, 8.8536vw, 340px);

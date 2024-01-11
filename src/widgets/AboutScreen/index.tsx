@@ -6,7 +6,7 @@ import styles from "./styles.module.scss";
 export const AboutScreen = () => {
   return (
     <>
-      <section className="container m-auto mt-16">
+      <section className="container m-auto mt-16" id="about">
         <Separator text="О нас" />
         <h2 className={styles.heading}>О компании</h2>
         <p className="paragraph mt-4">
@@ -37,7 +37,10 @@ export const AboutScreen = () => {
           text="Поставщик выполняет условия договора, обеспечивая отгрузку товара в соответствии с условиями, оговоренными с Заказчиком."
         />
       </section>
-      <section className="container-pc flex-col items-center m-auto pt-48">
+      <section
+        className="container-pc flex-col items-center m-auto pt-48 pb-20"
+        id="about-pc"
+      >
         <Separator text="О нас" />
         <h2 className={styles.heading}>О компании</h2>
         <p className="paragraph text-center w-[60%] mt-4">

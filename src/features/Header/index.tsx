@@ -29,19 +29,39 @@ export const Header = () => {
       <header className={styles.header_pc}>
         <img className={styles.logo} src={logo} alt="logo" />
         <nav className={styles.header_pc__nav}>
-          <Link className={`${styles.header_pc__nav__link}`} to="main">
+          <Link
+            smooth
+            className={`${styles.header_pc__nav__link}`}
+            to="main-pc"
+          >
             Главная
           </Link>
-          <Link className={`${styles.header_pc__nav__link}`} to="main">
+          <Link
+            smooth
+            className={`${styles.header_pc__nav__link}`}
+            to="about-pc"
+          >
             О Компании
           </Link>
-          <Link className={`${styles.header_pc__nav__link}`} to="main">
+          <Link
+            smooth
+            className={`${styles.header_pc__nav__link}`}
+            to="services"
+          >
             Услуги
           </Link>
-          <Link className={`${styles.header_pc__nav__link}`} to="main">
+          <Link
+            smooth
+            className={`${styles.header_pc__nav__link}`}
+            to="markets-pc"
+          >
             Площадки
           </Link>
-          <Link className={`${styles.header_pc__nav__link}`} to="main">
+          <Link
+            smooth
+            className={`${styles.header_pc__nav__link}`}
+            to="contacts-pc"
+          >
             Контакты
           </Link>
         </nav>

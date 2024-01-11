@@ -32,8 +32,9 @@ export const ServicesScreen = () => {
     <>
       <div
         className={`${styles.bg_image} w-full  bg-custom-black m-auto mt-16`}
+        id="services"
       >
-        <section className="container m-auto pt-10">
+        <section className="container m-auto pt-10" id="services">
           <Separator text="Услуги" />
           <h3 className={styles.heading}>Наши Услуги</h3>
           <p className="paragraph white w-[80%] mt-4">
@@ -56,7 +57,10 @@ export const ServicesScreen = () => {
             services={thirdCardData}
           />
         </section>
-        <section className="container-pc flex-col items-center m-auto pt-10">
+        <section
+          className="container-pc flex-col items-center m-auto pt-10"
+          id="services-pc"
+        >
           <Separator text="Услуги" />
           <h3 className={styles.heading}>Наши Услуги</h3>
           <p className="paragraph white w-[30%] text-center mt-5">

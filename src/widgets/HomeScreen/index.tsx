@@ -1,4 +1,3 @@
-import React from "react";
 import { Button } from "@shared/ui/Button";
 
 import illustration from "@assets/illustration.svg";
@@ -37,7 +36,7 @@ export const HomeScreen = () => {
             Казахстана и соседних стран. Наши брокеры всегда в курсе изменений
             биржевых правил и создают выгодные условия для клиентов.
           </p>
-          <Button text="Подробнее" marginTop="mt-10" />
+          <Button text="Подробнее" to="about-pc" marginTop="mt-10" />
         </div>
         <img
           src={illustration}

@@ -12,7 +12,11 @@ interface ButtonProps {
 
 export const Button: React.FC<ButtonProps> = ({ text, marginTop, to }) => {
   return (
-    <Link to={to} className={`${styles.button} ${marginTop} cursor-pointer`}>
+    <Link
+      to={to}
+      className={`${styles.button} ${marginTop} cursor-pointer`}
+      smooth
+    >
       {text}
     </Link>
   );

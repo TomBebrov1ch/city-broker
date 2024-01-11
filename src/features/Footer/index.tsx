@@ -9,7 +9,7 @@ import styles from "./styles.module.scss";
 export const Footer = () => {
   return (
     <>
-      <footer className={styles.footer}>
+      <footer className={styles.footer} id="contacts">
         <img src={logo} className={styles.footer__logo} alt="logo" />
         <nav className={styles.footer__nav}>
           <Link to="main" className={styles.footer__nav__link}>
@@ -59,7 +59,7 @@ export const Footer = () => {
           onClick={() => (location.href = "https://sparkstudio.kz/")}
         />
       </footer>
-      <footer className={styles.footer_pc}>
+      <footer className={styles.footer_pc} id="contacts-pc">
         <div className="flex items-center justify-between w-[86.6%]  m-auto">
           <img src={logo} className={styles.footer_pc__logo} alt="logo" />
           <nav className={styles.footer_pc__nav}>

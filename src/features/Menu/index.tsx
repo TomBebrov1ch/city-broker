@@ -57,14 +57,6 @@ export const Menu = () => {
           Услуги
         </Link>
         <Link
-          to="markets"
-          smooth
-          onClick={() => closeMenu()}
-          className={`${styles.menu__nav__link} mt-7`}
-        >
-          Площадки
-        </Link>
-        <Link
           to="contacts"
           smooth
           onClick={() => closeMenu()}

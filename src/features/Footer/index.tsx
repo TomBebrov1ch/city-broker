@@ -29,9 +29,6 @@ export const Footer = () => {
           <Link to="services" smooth className={styles.footer__nav__link}>
             Услуги
           </Link>
-          <Link to="markets" smooth className={styles.footer__nav__link}>
-            Площадки
-          </Link>
           <Link to="contacts" smooth className={styles.footer__nav__link}>
             Контакты
           </Link>
@@ -43,22 +40,20 @@ export const Footer = () => {
         />
         <hr className={styles.footer__separator} />
         <a
-          href="tel:+77273316641"
+          href="tel:+77079691027"
           className={`${styles.footer__contact_link_margin} mt-8`}
         >
-          +7 (727) 331 66 41
+          +7 (707) 969 1027
         </a>
-        <a href="tel:+77475281601" className={styles.footer__contact_link}>
-          +7 (747) 528 16 01{" "}
-        </a>
+
         <a
-          href="mailto:Info@korund-777.kz"
+          href="mailto:info@CityBroker.kz"
           className={styles.footer__contact_link}
         >
-          Info@korund-777.kz
+          info@CityBroker.kz
         </a>
         <span className={`${styles.footer__contact_link} w-[70%] mb-15`}>
-          Республика Казахстан,050064, г. Алматы,мкр. Думан-2, д. 18, кв. 55
+          Республика Казахстан, г. Алматы, Медеуский район, мкр-н «Думан-2» дом 18 оф. 55.
         </span>
         <img
           src={spark_logo}
@@ -86,13 +81,6 @@ export const Footer = () => {
             </Link>
             <Link
               smooth
-              to="markets-pc"
-              className={styles.footer_pc__nav__link}
-            >
-              Площадки
-            </Link>
-            <Link
-              smooth
               to="contacts-pc"
               className={styles.footer_pc__nav__link}
             >
@@ -107,27 +95,22 @@ export const Footer = () => {
         <hr className={styles.footer_pc__separator} />
         <div className="flex items-center justify-between w-[86.6%] m-auto mb-10 ">
           <a
-            href="mailto:Info@korund-777.kz"
+            href="mailto:info@CityBroker.kz"
             className={styles.footer_pc__contact_link}
           >
-            Info@korund-777.kz
+            info@CityBroker.kz
           </a>
           <span className={`${styles.footer_pc__contact_link} `}>
-            Республика Казахстан,050064, г. Алматы,мкр. Думан-2, д. 18, кв. 55
+            Республика Казахстан, г. Алматы, Медеуский район, мкр-н «Думан-2» дом 18 оф. 55.
           </span>
           <div className="flex flex-col items-center">
             <a
-              href="tel:+77273316641"
+              href="tel:+77079691027"
               className={`${styles.footer_pc__contact_link} mb-3`}
             >
-              +7 (727) 331 66 41
+              +7 (707) 969 1027
             </a>
-            <a
-              href="tel:+77475281601"
-              className={styles.footer_pc__contact_link}
-            >
-              +7 (747) 528 16 01{" "}
-            </a>
+
           </div>
         </div>
         <img

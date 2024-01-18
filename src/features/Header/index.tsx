@@ -55,13 +55,7 @@ export const Header = () => {
           >
             Услуги
           </Link>
-          <Link
-            smooth
-            className={`${styles.header_pc__nav__link}`}
-            to="markets-pc"
-          >
-            Площадки
-          </Link>
+
           <Link
             smooth
             className={`${styles.header_pc__nav__link}`}
